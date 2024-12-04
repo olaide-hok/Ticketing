@@ -31,3 +31,11 @@ build:
               manual:
                   - dest: .
                     src: 'src/**/*.ts'
+        - image: olaidehok/orders
+          context: orders
+          docker:
+              dockerfile: Dockerfile
+          sync:
+              manual:
+                  - src: 'src/**/*.ts'
+                    dest: .
