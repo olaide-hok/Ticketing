@@ -32,12 +32,13 @@ const OrderShow = ({order, currentUser}) => {
         return <div>Order Expired</div>;
     }
 
+    // Provide valid stripe publishable key
     return (
         <div>
             Time left to pay: {timeLeft} seconds
             <StripeCheckout
                 token={({id}) => doRequest({token: id})}
-                stripeKey="pk_test_51KxXjkHscHHEBb7thm0ekyO7C3HK1IZNV6i1u6y19bW8vBts7FNacP3v4t72TgGecK80IPazl2YBJU7aXXgB3Fw600ITMC63O3"
+                stripeKey=""
                 amount={order.ticket.price * 100}
                 email={currentUser.email}
             />
