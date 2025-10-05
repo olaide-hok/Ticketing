@@ -12,6 +12,7 @@ spec:
             labels:
                 app: tickets-mongo
         spec:
+            restartPolicy: Never
             containers:
                 - name: tickets-mongo
                   image: mongo

@@ -12,6 +12,7 @@ spec:
             labels:
                 app: orders-mongo
         spec:
+            restartPolicy: Never
             containers:
                 - name: orders-mongo
                   image: mongo

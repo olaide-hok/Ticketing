@@ -12,6 +12,7 @@ spec:
             labels:
                 app: orders
         spec:
+            restartPolicy: Never
             containers:
                 - name: orders
                   image: olaidehok/orders

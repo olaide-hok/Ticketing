@@ -12,6 +12,7 @@ spec:
             labels:
                 app: tickets
         spec:
+            restartPolicy: Never
             containers:
                 - name: tickets
                   image: olaidehok/ticketing-tickets

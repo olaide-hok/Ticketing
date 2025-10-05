@@ -12,6 +12,7 @@ spec:
             labels:
                 app: client
         spec:
+            restartPolicy: Never
             containers:
                 - name: client
                   image: olaidehok/ticketing-client

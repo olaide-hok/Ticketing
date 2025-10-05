@@ -12,6 +12,7 @@ spec:
             labels:
                 app: expiration-redis
         spec:
+            restartPolicy: Never
             containers:
                 - name: expiration-redis
                   image: redis

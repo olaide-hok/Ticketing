@@ -12,6 +12,7 @@ spec:
             labels:
                 app: nats
         spec:
+            restartPolicy: Never
             containers:
                 - name: nats
                   image: nats-streaming:0.17.0

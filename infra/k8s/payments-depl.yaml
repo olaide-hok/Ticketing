@@ -12,6 +12,7 @@ spec:
             labels:
                 app: payments
         spec:
+            restartPolicy: Never
             containers:
                 - name: payments
                   image: olaidehok/payments

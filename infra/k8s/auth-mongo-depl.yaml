@@ -12,6 +12,7 @@ spec:
             labels:
                 app: auth-mongo
         spec:
+            restartPolicy: Never
             containers:
                 - name: auth-mongo
                   image: mongo

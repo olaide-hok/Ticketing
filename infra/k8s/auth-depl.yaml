@@ -12,6 +12,7 @@ spec:
             labels:
                 app: auth
         spec:
+            restartPolicy: Never
             containers:
                 - name: auth
                   image: olaidehok/auth

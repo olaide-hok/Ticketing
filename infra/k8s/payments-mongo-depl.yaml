@@ -12,6 +12,7 @@ spec:
             labels:
                 app: payments-mongo
         spec:
+            restartPolicy: Never
             containers:
                 - name: payments-mongo
                   image: mongo
